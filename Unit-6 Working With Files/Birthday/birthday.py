@@ -1,0 +1,5 @@
+f=open("birthday.txt","a+")
+f.write("\n")
+f.write(input("Enter Birthday: "))
+f.seek(0)
+print(f.read())

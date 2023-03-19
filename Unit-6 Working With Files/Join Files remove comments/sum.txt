@@ -1,0 +1,6 @@
+A+B=C 
+A-B=D 
+AxB=E 
+def sum(a,b):
+    s=a+b
+    print(s) 
