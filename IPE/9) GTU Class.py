@@ -1,4 +1,4 @@
-class GTU:
+class GTU():
     cnt=100
     def __init__(self):
         self.x=None
@@ -7,7 +7,7 @@ class GTU:
         self.x=x
         self.y=y
     def print_value(self):
-        print(self.x,self.y)
-gtu=GTU
-gtu.get_value(10,20)
-gtu.print_value(10,20)
+        print(self.x,self.y,self.cnt)
+gtu=GTU()
+gtu.get_value(x=10,y=20)
+gtu.print_value()
