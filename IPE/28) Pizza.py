@@ -66,24 +66,15 @@ class order:
         print("Your Order Details are:")
         count=0
         for i in self.pizza:
-            count+=1
-            countj=0
-            flag=0
-            for j in i:
-                countj+=1
-                if countj==1:
-                    print("Size Of Your Pizza",count," is",j)
+            for j in range(len(i)):
+                if j==0:
+                    print("Size of your pizza",i[j])
                     continue
-                if countj==2:
-                    print("Cheese used in your",count," is",j)
+                if j==1:
+                    print("Crust of your pizza",i[j])
                     continue
-                if countj<self.no_toppings[count-1]+2:
-                    if flag==0:
-                        print("Description Of Your Pizza: ",end="")
-                        flag=1
-                    print(j,end=" ")
-                    continue
-                print("\n-----------------------------------------------------")
+                print("Toppings:",i[j],end=" ")
+            print("\n-----------------------------------------------------")
 bill=order()
 bill.select_size()
 bill.display()
